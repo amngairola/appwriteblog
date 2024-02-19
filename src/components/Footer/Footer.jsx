@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
+export default Footer;
 function Footer() {
   return (
     <section className="relative overflow-hidden py-10 bg-gradient-to-r from-blue-500 to-purple-500">
@@ -11,6 +14,30 @@ function Footer() {
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center">
                 <Logo width="100px" />
+                <div className="w-full inline-flex p-6 md:w-full lg:w-1/12">
+                  <div className="h-full flex flex-col justify-between">
+                    <div className="mb-4">
+                      <a
+                        href="https://github.com/your-github-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-100 hover:text-white"
+                      >
+                        <FaGithub size={24} />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://linkedin.com/in/your-linkedin-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-100 hover:text-white"
+                      >
+                        <FaLinkedin size={24} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
                 <p className="text-sm text-gray-100">
@@ -134,10 +161,9 @@ function Footer() {
               </ul>
             </div>
           </div>
+          {/* Add social links with icons */}
         </div>
       </div>
     </section>
   );
 }
-
-export default Footer;
