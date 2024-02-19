@@ -18,7 +18,7 @@ function Footer() {
                   <div className="h-full flex flex-col justify-between">
                     <div className="mb-4">
                       <a
-                        href="https://github.com/your-github-profile"
+                        href="https://github.com/amngairola"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-100 hover:text-white"
@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                     <div>
                       <a
-                        href="https://linkedin.com/in/your-linkedin-profile"
+                        href="https://www.linkedin.com/in/aman-gairola-8ba2a7244"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-100 hover:text-white"
